@@ -69,6 +69,9 @@ dependencies:
   image: ^4.5.4
   percent_indicator: ^4.2.5
   fl_chart: ^1.0.0
+  google_maps_flutter: ^2.6.0
+  geolocator: ^10.1.0
+  permission_handler: ^11.3.0
   # flutter_facebook_auth: '^3.5.0'
 
 dev_dependencies:
@@ -151,6 +154,9 @@ flutter:
     - assets/images/mock_images/trigo.jpg
     - assets/images/mock_images/centeio.jpg
     - assets/images/mock_images/quinta.jpg
+    - assets/images/mock_images/cenoura.jpg
+    - assets/images/mock_images/batata.jpg
+    - assets/images/mock_images/tomate.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

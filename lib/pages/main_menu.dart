@@ -116,9 +116,9 @@ class _MainMenuState extends State<MainMenu>
 
         final List<Widget> _consumerPages = [
           ConsumerHomePage(),
+          OrdersPage(),
           ExplorePage(),
           MapPage(),
-          OrdersPage(),
           ChatListPage(),
         ];
         return Scaffold(
