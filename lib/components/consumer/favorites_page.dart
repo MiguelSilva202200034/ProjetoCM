@@ -43,7 +43,7 @@ class FavoritesPage extends StatelessWidget {
               padding: const EdgeInsets.all(12.0),
               child: Row(
                 children: [
-                  // Imagem do produto
+                  
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image.asset(
@@ -56,7 +56,7 @@ class FavoritesPage extends StatelessWidget {
                   
                   const SizedBox(width: 12),
 
-                  // Informações do produto
+
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,15 +80,13 @@ class FavoritesPage extends StatelessWidget {
                     ),
                   ),
 
-                  // Botões de ação
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      // Botão de coração (remover dos favoritos)
+                      //heart button
                       IconButton(
-                        icon: const Icon(Icons.favorite, color: Colors.red),
+                        icon: const Icon(Icons.favorite, color: Color.fromRGBO(66, 139, 112, 1)),
                         onPressed: () {
-                          // Implementar lógica para remover dos favoritos
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: Text('${item['product']} removido dos favoritos'),
@@ -97,7 +95,7 @@ class FavoritesPage extends StatelessWidget {
                         },
                       ),
                       
-                      // Botão "Ver em loja"
+                      //ver em loja button
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color.fromRGBO(59, 126, 98, 1),
@@ -106,7 +104,6 @@ class FavoritesPage extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 8),
                         ),
                         onPressed: () {
-                          // Navegar para página da loja
                           Navigator.push(
                             context,
                             MaterialPageRoute(

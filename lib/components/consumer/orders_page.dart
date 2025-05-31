@@ -61,7 +61,6 @@ class OrdersPage extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                // Coluna com imagem, preço e tipo de entrega
                 Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -93,7 +92,6 @@ class OrdersPage extends StatelessWidget {
 
                 const SizedBox(width: 12),
 
-                // Restante das informações da encomenda
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -123,7 +121,6 @@ class OrdersPage extends StatelessWidget {
 
                 const SizedBox(width: 6),
 
-                // Botão de detalhes (mantido igual)
                 Align(
                   alignment: Alignment.center,
                   child: ElevatedButton(
