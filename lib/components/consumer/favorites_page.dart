@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'product_detail_page.dart';
 
 class FavoritesPage extends StatelessWidget {
   const FavoritesPage({super.key});
@@ -107,11 +108,13 @@ class FavoritesPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Scaffold(
-                                appBar: AppBar(title: Text(item['product']!)),
-                                body: Center(child: Text('Página de ${item['product']}')),
-                              ),
-                            ),
+                              builder:
+                                  (context) => ProductDetailPage(
+                                    product: item['product']!,
+                                    seller: item['seller']!,
+                                    imagePath: item['imagePath']!,
+                                  ),
+                           ),
                           );
                         },
                         child: const Text('Ver em loja'),

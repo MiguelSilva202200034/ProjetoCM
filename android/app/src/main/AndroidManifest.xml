@@ -39,7 +39,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AQUI_VAI_SUA_CHAVE_API_DO_GOOGLE_MAPS"/>
+            android:value="AIzaSyAdTxhcG6FUlRzvSkNfJ9hCVdQoGChw3_g"/>
 
     </application>
     <!-- Required to query activities that can process text, see:

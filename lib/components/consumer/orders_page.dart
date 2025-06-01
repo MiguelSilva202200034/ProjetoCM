@@ -11,7 +11,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'details_page.dart';
+import 'order_details_page.dart';
 
 class OrdersPage extends StatelessWidget {
   const OrdersPage({super.key});
@@ -24,6 +24,8 @@ class OrdersPage extends StatelessWidget {
       'delivery': 'Entrega em mãos',
       'date': '13/04/2025',
       'imagePath': 'assets/images/mock_images/centeio.jpg',
+      'products': 'Cenouras, Couves, Alfaces',
+      'quantities': '50, 30, 20',
     },
     {
       'orderNumber': '46326',
@@ -32,6 +34,8 @@ class OrdersPage extends StatelessWidget {
       'delivery': 'Entrega padrão',
       'date': '14/04/2025',
       'imagePath': 'assets/images/mock_images/centeio.jpg',
+      'products': 'Cenouras, Couves, Alfaces',
+      'quantities': '30, 30, 20',
     },
     {
       'orderNumber': '46327',
@@ -40,8 +44,11 @@ class OrdersPage extends StatelessWidget {
       'delivery': 'Retirada no local',
       'date': '15/04/2025',
       'imagePath': 'assets/images/mock_images/centeio.jpg',
+      'products': 'Cenouras, Couves, Alfaces',
+      'quantities': '12, 30, 20',
     },
   ];
+
 
   @override
   Widget build(BuildContext context) {
